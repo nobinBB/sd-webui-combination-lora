@@ -1,4 +1,7 @@
 ## Conbination LoRA
+
+このツールは、LoRAを組み合わせるワイルカードとプロンプトを生成します
+
 LoRA Path：組み合わせたいLoRAファイルが格納されている場所
 ※civitai Helperにてトリガーワードを取得しておくことで、LoRA+トリガーワードを取得します
 
