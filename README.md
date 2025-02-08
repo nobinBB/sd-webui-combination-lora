@@ -1,0 +1,11 @@
+## Conbination LoRA
+LoRA Path：組み合わせたいLoRAファイルが格納されている場所
+※civitai Helperにてトリガーワードを取得しておくことで、LoRA+トリガーワードを取得します
+
+Select Mode：wildcardかプロンプトを生成するかを選択※プロンプトの場合、LoRA数が多すぎるとプロンプト上限に引っ掛かります
+
+Wildcard Name Input：ワイルカードを生成する場合は、ファイル名を入れます※同じ名前の場合は上書きされます
+※ワイルカードの保存先は、使っているWEBUIのdyamic promptsのワイルカードフォルダーに格納されます（生成時保存場所表示されます）
+
+LoRA weight min：LoRAの重みの最小値を設定します
+LoRA weight max：LoRAの重みの最大値を設定します最小値0.4で最大値が0.6の場合は下記のようなLoRAの重みをランダムで設定します。
