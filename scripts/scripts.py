@@ -110,10 +110,10 @@ def process_lora_files(lora_folder, output_type, wildcard_file_name, ui_weight_m
             pattern = "{" + str(i) + "$$" + "|".join(["__Lora-list__"] * i) + "}"
             combination_patterns.append(pattern)
         yaml_content = f"{wildcard_file_name}:\n"
-        yaml_content += "  lora-combination:\n"
+        yaml_content += wildcard_file_name- + "lora-combination:\n"
         for pat in combination_patterns:
             yaml_content += "    - >-\n      " + pat + "\n"
-        yaml_content += "  Lora-list:\n"
+        yaml_content += wildcard_file_name- + "lora-list:\n"
         for item in lora_list_items:
             yaml_content += "    " + item + "\n"
         extensions_dir = os.path.dirname(os.path.dirname(script_directory))
